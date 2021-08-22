@@ -1,0 +1,13 @@
+#define _CRT_SECURE_NOWARNINGS
+#include<stdio.h>
+int main()
+{
+        printf("Hellow world/n");
+        return 0;
+}
+int main()
+{
+        char ch = 'A'；
+            printf("%c/n",ch);
+        return 0;
+}
