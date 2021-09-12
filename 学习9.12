@@ -1,0 +1,127 @@
+#define _CRT_SECURE_NO_WARNINGS  1
+#include<stdio.h>
+//
+//int main()
+//{
+	/*int a = 9 % 2;//取模操作符，即除后余数
+	printf("%d\n", a);*/
+
+/*int a = 2;
+	int b =  a << 1;//左移操作符，将二进制向左移一位
+	printf("%d\n", b);*/
+
+	/*int a = 6;
+	a += 3;
+	printf("%d\n", a);*/
+  
+  
+	//c 语言中 0表示假 非0表示真
+	/*int a = 0;
+	printf("%d\n", !a);！为取反符号
+	
+	if (a)//如果a为假，则做什么。如果a为真，则做什么
+	{
+
+	}
+	if (!a)
+	{
+
+	}*/
+  
+  /*int a = 0;
+
+	printf("%d\n", ~a);*///~是按二进制位取反，二进制首位表示正负，1位负，0为正；源变补取反，补变反加一
+
+	//int a = 10;
+	// int b = ++a;//先++后取等
+	// printf("%d\n", b);
+	// printf("%d\n", a);
+  
+  /*int a = 0;
+
+	printf("%d\n", ~a);*///~是按二进制位取反，二进制首位表示正负，1位负，0为正
+
+	//int a = 10;
+	// int b = ++a;//先++后取等
+	// printf("%d\n", b);
+	// printf("%d\n", a);
+
+	/*int a = 9;
+	int b = a++;
+	printf("%d\n", b);*/
+
+	/*int a = 5;
+	int b = 3;
+	int c = a&&b;//并集
+	printf("%d\n", c);*/
+
+	/*int a = 10;
+	int b = 30;
+	int max = 0;
+	if (a > b)//从属句不能用int
+		max = a;
+
+	else
+		max = b;
+	printf("%d\n", max);*/
+
+	/*int a = 10;
+	int b = 20;
+	int max = 0;
+	max=a > b ? a : b;
+	C*/
+
+	//int a = 2;
+	//int b = 4;
+	//int c = 6;
+	//int d = (c = a + 2, b = c - 1, a = b + 3);//逗号表达式从左到右依次计算，最后的计算结果为最终结果
+	//printf("%d\n", d);
+
+	/*printf("%s\n", " '  '");*///字符串也是可以规避的
+
+//	return 0;
+//}
+
+//typedef unsigned int u_int;//typedef类型重定义
+//	int main()
+//{
+//		unsigned int num = 100;
+//		u_int num = 100;
+//
+//		return 0;
+//}
+
+//void test()
+//{
+//	int a = 1;
+//	a++;
+//	printf("%d", a);
+//}//局部变量自动开始，自动结束。如果要持续循环呢
+//void test()
+//{
+//	static int a = 1;//static修饰局部变量，使局部变量的结果不消失
+//	a++;
+//	printf("%d\n", a);
+//}
+//int main()
+//{   
+//	int i = 0;
+//	while (i < 10)
+//	{
+//	 test();
+//		i++;
+//	}
+//	return 0;
+//}
+//extern int g_val;//当外部文件被static修饰时将无法使用外部变量。
+//int main()
+//{
+//	printf("%d\n", g_val);
+//	return 
+//define 可以定义宏，即数字替换
+#define ADD(X,Y)  ((X)+(Y))
+int main()
+{
+	printf("%d\n", 4 * ADD(2, 3));
+	return 0;
+}
